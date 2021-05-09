@@ -28,8 +28,11 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
     <?= $this->Html->meta('icon') ?>
 
     <link href="https://fonts.googleapis.com/css?family=Raleway:400,700" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
 
-    <?= $this->Html->css(['normalize.min', 'milligram.min', 'cake']) ?>
+<!--     $this->Html->css(['normalize.min', 'milligram.min', 'cake'])-->
+    <?= $this->Html->css(['normalize.min', 'milligram.min', 'portfolio']) ?>
 
     <?= $this->fetch('meta') ?>
     <?= $this->fetch('css') ?>

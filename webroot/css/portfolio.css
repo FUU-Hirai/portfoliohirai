@@ -1,0 +1,51 @@
+@charset "UTF-8";
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    text-align: center;
+    font-size: 1.4rem;
+    font-family: "Hiragino Maru Gothic ProN", Meiryo, sans-serif;
+}
+.site-title{
+    font-family: 'Shadows Into Light', cursive;
+    padding: 100px 30px 50px;
+}
+.site-title::before,
+.site-title::after {
+    content: '';
+    display: inline-block;
+    background-color: #fff;
+    vertical-align: middle;
+    width: 140px;
+    height: 2px;
+    margin: 0 30px;
+}
+.float-left_title {
+    font-family: 'Shadows Into Light', cursive;
+}
+.float-right_title {
+    font-family: 'Shadows Into Light', cursive;
+}
+.about_me_and_contact {
+    padding: 30px;
+    width: 100%;
+    display: inline-block;
+}
+
+
+.form_left {
+    float: left;
+    width: 50%;
+}
+
+.form_right {
+    float: right;
+    width: 50%;
+}
+.button {
+    margin: 10px;
+}
+
