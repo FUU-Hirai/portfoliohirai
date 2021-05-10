@@ -30,6 +30,7 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
     <link href="https://fonts.googleapis.com/css?family=Raleway:400,700" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
+    <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
 
 <!--     $this->Html->css(['normalize.min', 'milligram.min', 'cake'])-->
     <?= $this->Html->css(['normalize.min', 'milligram.min', 'portfolio']) ?>
@@ -39,15 +40,14 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
     <?= $this->fetch('script') ?>
 </head>
 <body>
-    <nav class="top-nav">
-        <div class="top-nav-title">
-            <a href="<?= $this->Url->build('/') ?>"><span>Cake</span>PHP</a>
-        </div>
-        <div class="top-nav-links">
-            <a target="_blank" rel="noopener" href="https://book.cakephp.org/4/">Documentation</a>
-            <a target="_blank" rel="noopener" href="https://api.cakephp.org/">API</a>
-        </div>
-    </nav>
+<!--    <nav class="top-nav">-->
+<!--        <div class="top-nav-title">-->
+<!--        </div>-->
+<!--        <div class="top-nav-links">-->
+<!--            <a target="_blank" rel="noopener" href="https://book.cakephp.org/4/">Documentation</a>-->
+<!--            <a target="_blank" rel="noopener" href="https://api.cakephp.org/">API</a>-->
+<!--        </div>-->
+<!--    </nav>-->
     <main class="main">
         <div class="container">
             <?= $this->Flash->render() ?>

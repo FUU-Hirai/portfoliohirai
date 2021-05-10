@@ -3,7 +3,34 @@
 html {
     font-size: 62.5%;
 }
+.container {
+    padding: 0 0.0rem;
+}
+/******************header*********************************/
+.global-nav .nav-item {
+    display: inline-block;
+    margin:8px 30px;
+}
+.global-nav .nav-item a {
+    font-family: 'Shadows Into Light', cursive;
+    margin: 0 40px;
+    height: 30px;
+    text-align: center;
+    border-radius: 4px;
+    color:#666;
+    font-size: 1.4rem;
+    padding: 5px 5px;
 
+    letter-spacing: 2px;
+    transition:  0.15s;
+}
+.global-nav .nav-item a:hover{
+    background-color: #ef5753;
+    color: #d5caca;
+
+}
+
+/***************************body********************/
 body {
     text-align: center;
     font-size: 1.4rem;
@@ -17,7 +44,7 @@ body {
 .site-title::after {
     content: '';
     display: inline-block;
-    background-color: #fff;
+    background-color: #606c76;
     vertical-align: middle;
     width: 140px;
     height: 2px;
@@ -30,7 +57,8 @@ body {
     font-family: 'Shadows Into Light', cursive;
 }
 .about_me_and_contact {
-    padding: 30px;
+    padding-top: 50px;
+    padding-bottom: 50px;
     width: 100%;
     display: inline-block;
 }
@@ -48,4 +76,95 @@ body {
 .button {
     margin: 10px;
 }
+
+.skills {
+    font-family: 'Shadows Into Light', cursive;
+}
+
+.skills_context {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: space-around;
+    justify-content: space-around;
+    padding-bottom: 50px;
+}
+
+.skills_title {
+    padding: 100px 30px 50px;
+}
+
+.skills_title::before,
+.skills_title::after {
+    content: '';
+    display: inline-block;
+    background-color: #606c76;
+    vertical-align: middle;
+    width: 140px;
+    height: 2px;
+    margin: 0 30px;
+}
+.skills_writing_sub_title,
+.skills_wordpress_sub_title,
+.skills_products_sub_title
+{
+    font-size: 20px;
+    padding-top: 10px;
+}
+
+.work{
+    font-family: 'Shadows Into Light', cursive;
+    padding-bottom: 50px;
+}
+.work_title
+{
+    padding: 100px 30px 50px;
+}
+.work_title::before,
+.work_title::after {
+    content: '';
+    display: inline-block;
+    background-color: #606c76;
+    vertical-align: middle;
+    width: 140px;
+    height: 2px;
+    margin: 0 30px;
+}
+.work_context {
+    display: table;
+    width: 100%;
+    margin-top: 60px;
+    table-layout: fixed;
+}
+.work_child1,
+.work_child2,
+.work_child3 {
+    display: table-cell;
+}
+
+.work_text {
+    display: block;
+    width: 100%;
+}
+/******************footer**********************/
+footer {
+    padding: 50px;
+    font-family: 'Shadows Into Light', cursive;
+    display: inline-block;
+    width: 100%;
+}
+.footer_global-nav {
+    float: right;
+    width: 50%;
+    list-style: none;
+}
+.nav-item {
+    list-style: none;
+}
+.footer_icon {
+    float: left;
+    width: 50%;
+    padding-bottom: 10px;
+}
+
+
 

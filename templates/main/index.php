@@ -16,8 +16,9 @@
 
 $cakeDescription = 'CakePHP: the rapid development php framework';
 ?>
-<div class="container" style="background-color: #2f85ae">
-    <div class="about" style="background-color: #ef5753">
+<?= $this->element('main/header')?>
+<div class="container">
+    <div class="about">
         <h1 class="site-title">Welcome to my homepage</h1>
         <p class="site-description">
             ようこそお越しくださいました。<br/>
@@ -39,14 +40,54 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
             </div>
         </div>
     </div>
-    <div class="skills" style="background-color: #1f9d55">
-
+    <div class="skills">
+        <h1 class="skills_title">MY SKILLS</h1>
+        <div class="skills_context">
+        <div class="skills_writing">
+            <h2 class="skills_writing_title">Writing<div class="skills_writing_sub_title">ライティング</div></h2>
+            <div class="skills_writing_text">記事を執筆いたします。<br/>
+            どんどんご相談ください！</div>
+        </div>
+        <div class="skills_wordpress">
+            <h2 class="skills_wordpress_title">WEB production<div class="skills_wordpress_sub_title">ウェブ制作</div></h2>
+            <div class="skills_wordpress_text">WEB制作を行います<br/>どんどんご相談ください！</div>
+        </div>
+        <div class="skills_products">
+            <h2 class="skills_products_title">Development<div class="skills_products_sub_title">システム開発</div></h2>
+            <div class="skills_products_text">システム開発を行います。<br/>
+                どんどんご相談ください！</div>
+        </div>
+        </div>
     </div>
-    <div class="work" style="background-color: #606c76">
-
+    <div class="work">
+        <h1 class="work_title">WORKS</h1>
+        <div class="work_context">
+            <div class="work_child1">
+                <img class="work_image" src="aaa" alt="制作事例１">
+                <p class="work_text">一つ目の事例紹介<br/>
+                    簡単な紹介をします。
+                </p>
+                <a href="main/work" class="button works">READ MORE</a>
+            </div>
+            <div class="work_child2">
+                <img class="work_image" src="aaa" alt="制作事例１">
+                <p class="work_text">一つ目の事例紹介<br/>
+                    簡単な紹介をします。
+                </p>
+                <a href="main/work" class="button works">READ MORE</a>
+            </div>
+            <div class="work_child3">
+                <img class="work_image" src="aaa" alt="制作事例１">
+                <p class="work_text">一つ目の事例紹介<br/>
+                    簡単な紹介をします。
+                </p>
+                <a href="main/work" class="button works">READ MORE</a>
+            </div>
+        </div>
     </div>
     <div class="content" style="background-color: blueviolet">
 
     </div>
+    <?= $this->element('main/footer')?>
 </div>
 
