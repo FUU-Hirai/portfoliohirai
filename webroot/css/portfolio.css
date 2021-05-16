@@ -167,4 +167,21 @@ footer {
 }
 
 
+/*************contact**********************/
+.contact_title {
+    font-family: 'Shadows Into Light', cursive;
+    padding-top: 50px;
+}
+
+.contact_desc {
+    padding-bottom: 50px;
+}
+.contact_form{
+    padding: 0px 100px 20px 100px;
+}
+form {
+    margin-bottom: 20px;
+}
+
+
 
