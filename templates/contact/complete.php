@@ -16,4 +16,16 @@
 
 $cakeDescription = 'CakePHP: the rapid development php framework';
 ?>
-
+<div class="content_complete">
+    <?= $this->Form->create(null,[
+        'url' => [
+            'controller' => 'main','action' => 'index']
+    ])?>
+    <h1 class="content_complete_title">Thank you!</h1>
+            <h3 class="content_complete_sub_title">お問い合わせが送信されました</h3>
+    <div class="content_complete_context">
+        <p>お問い合わせありがとうございます。<br/>
+        お問い合わせ内容につきましては、メールにて返信させていただきます。</p>
+    </div>
+    <?= $this->Form->button('トップページへ戻る')?>
+</div>

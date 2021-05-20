@@ -62,24 +62,24 @@ class ContactUserInfoTable extends Table
             ->scalar('company_name')
             ->maxLength('company_name', 50)
             ->requirePresence('company_name', 'create')
-            ->notEmptyString('company_name');
+            ->notEmptyString('company_name','お名前を入力して下さい');
 
         $validator
             ->email('email')
-            ->requirePresence('email', 'create')
-            ->notEmptyString('email');
+            ->requirePresence('email', 'create','メールアドレスを入力して下さい')
+            ->notEmptyString('email','メールアドレスを入力して下さい');
 
         $validator
             ->scalar('tel')
             ->maxLength('tel', 13)
             ->requirePresence('tel', 'create')
-            ->notEmptyString('tel');
+            ->allowEmptyString('tel');
 
         $validator
             ->scalar('message')
             ->maxLength('message', 1000)
             ->requirePresence('message', 'create')
-            ->notEmptyString('message');
+            ->allowEmptyString('message');
 
         return $validator;
     }

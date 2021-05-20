@@ -18,23 +18,36 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
 ?>
 
 <div class="contact">
-    <h2 class="contact_title">Contact</h2>
+    <h1 class="contact_title">Confirm</h1>
+    <h3 class="content_confirm_sub_title">お問い合わせ</h3>
     <div class="contact_form">
-        <p class="contact_desc">こちらはお問い合わせフォームです。<br/>
-            WEB制作やライティングのお仕事についてのご依頼、<br/>
-            もしくはちょっとした質問でも構いません。お待ちしております。</p>
+        <p class="contact_desc">こちらは確認画面です。<br/>
+        以下の内容でお間違いないかご確認下さい。</p>
         <div class="contact_form">
             <?= $this->Form->create($contactUserInfoEntity) ?>
-            <p>会社名</p>
-            <?= $sPost['company_name'] ?>
-            <p>メールアドレス</p>
-            <?= $sPost['email'] ?>
-            <p>電話番号</p>
-            <?= $sPost['tel'] ?>
-            <p>お問い合わせ内容</p>
-            <?= $sPost['message'] ?>
-            <?= $this->Form->submit('送信') ?>
-            <?= $this->Form->end()?>
+            <table>
+                <tbody>
+                <tr>
+                    <th>会社名</th>
+                    <td><?= $sPost['company_name'] ?></td>
+                </tr>
+                <tr>
+                    <th>メールアドレス</th>
+                    <td><?= $sPost['email'] ?></td>
+                </tr>
+                <tr>
+                    <th>電話番号</th>
+                    <td><?= $sPost['tel'] ?></td>
+                </tr>
+                <tr>
+                    <th>お問い合わせ内容</th>
+                    <td><?= $sPost['message'] ?></td>
+                </tr>
+            </table>
         </div>
+        <?= $this->Form->button('入力画面へ戻る',['type' => 'button',
+            'onclick' => 'history.back()']) ?>
+        <?= $this->Form->submit('送信') ?>
+        <?= $this->Form->end()?>
     </div>
 </div>

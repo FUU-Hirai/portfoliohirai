@@ -19,10 +19,10 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
 <footer class="footer">
     <nav class="footer_global-nav">
         <ul>
-            <li class="nav-item active"><a href="main/about">ABOUT</a></li>
-            <li class="nav-item"><a href="main/works">WORKS</a></li>
-            <li class="nav-item"><a href="main/blog">BLOG</a></li>
-            <li class="nav-item"><a href="main/contact">CONTACT</a></li>
+            <li class="nav-item active"><a href="about/index">ABOUT</a></li>
+            <li class="nav-item"><a href="work/index">WORKS</a></li>
+            <li class="nav-item"><a href="blog/index">BLOG</a></li>
+            <li class="nav-item"><a href="contact/index">CONTACT</a></li>
         </ul>
     </nav>
     <div class="footer_icon">

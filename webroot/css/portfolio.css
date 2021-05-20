@@ -172,15 +172,42 @@ footer {
     font-family: 'Shadows Into Light', cursive;
     padding-top: 50px;
 }
+.content_sub_title::before,
+.content_sub_title::after {
+    content: '';
+    display: inline-block;
+    background-color: #606c76;
+    vertical-align: middle;
+    width: 140px;
+    height: 2px;
+    margin: 0 30px;
+}
+
 
 .contact_desc {
     padding-bottom: 50px;
 }
+/*********contact_confirm*******************/
 .contact_form{
     padding: 0px 100px 20px 100px;
 }
+.content_confirm_sub_title::before,
+.content_confirm_sub_title::after {
+    content: '';
+    display: inline-block;
+    background-color: #606c76;
+    vertical-align: middle;
+    width: 140px;
+    height: 2px;
+    margin: 0 30px;
+}
 form {
     margin-bottom: 20px;
+}
+
+.content_complete_title {
+    font-family: 'Shadows Into Light', cursive;
+    padding-top: 50px;
 }
 
 

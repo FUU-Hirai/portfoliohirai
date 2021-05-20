@@ -17,6 +17,7 @@
 $cakeDescription = 'CakePHP: the rapid development php framework';
 ?>
 <?= $this->element('main/header')?>
+<?= $this->Flash->render('contact_success') ?>
 <div class="container">
     <div class="about">
         <h1 class="site-title">Welcome to my homepage</h1>
@@ -30,13 +31,13 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
                 <h2 class="float-left_title">about ME</h2>
                 <p class="left_form">現在エンジニアをやっております<br/>
                 もっと詳しく知りたい人はこちら！</p>
-                <a class="button about" href="/about/index">about Me</a>
+                <a class="button about" href="about/index">about Me</a>
             </div>
             <div class="form_right">
                 <h2 class="float-right_title">contact</h2>
                 <p class="right_form">WEB制作やライティングをしています。<br/>
                 お仕事の相談はこちら！</p>
-                <a class="button contact" href="/my_portfoliohirai/my_portfoliohirai/contact/index">contact</a>
+                <a class="button contact" href="contact/index">contact</a>
             </div>
         </div>
     </div>
@@ -67,21 +68,21 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
                 <p class="work_text">一つ目の事例紹介<br/>
                     簡単な紹介をします。
                 </p>
-                <a href="main/work" class="button works">READ MORE</a>
+                <a href="work/index" class="button works">READ MORE</a>
             </div>
             <div class="work_child2">
-                <img class="work_image" src="aaa" alt="制作事例１">
+                <img class="work_image" src="#" alt="制作事例１">
                 <p class="work_text">一つ目の事例紹介<br/>
                     簡単な紹介をします。
                 </p>
-                <a href="main/work" class="button works">READ MORE</a>
+                <a href="work/index" class="button works">READ MORE</a>
             </div>
             <div class="work_child3">
-                <img class="work_image" src="aaa" alt="制作事例１">
+                <img class="work_image" src="#" alt="制作事例１">
                 <p class="work_text">一つ目の事例紹介<br/>
                     簡単な紹介をします。
                 </p>
-                <a href="main/work" class="button works">READ MORE</a>
+                <a href="work/index" class="button works">READ MORE</a>
             </div>
         </div>
     </div>
