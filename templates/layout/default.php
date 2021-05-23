@@ -31,6 +31,7 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
     <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.11.0/devicon.min.css">
 
 <!--     $this->Html->css(['normalize.min', 'milligram.min', 'cake'])-->
     <?= $this->Html->css(['normalize.min', 'milligram.min', 'portfolio']) ?>

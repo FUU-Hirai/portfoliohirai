@@ -44,20 +44,20 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
     <div class="skills">
         <h1 class="skills_title">MY SKILLS</h1>
         <div class="skills_context">
-        <div class="skills_writing">
-            <h2 class="skills_writing_title">Writing<div class="skills_writing_sub_title">ライティング</div></h2>
-            <div class="skills_writing_text">記事を執筆いたします。<br/>
-            どんどんご相談ください！</div>
-        </div>
-        <div class="skills_wordpress">
-            <h2 class="skills_wordpress_title">WEB production<div class="skills_wordpress_sub_title">ウェブ制作</div></h2>
-            <div class="skills_wordpress_text">WEB制作を行います<br/>どんどんご相談ください！</div>
-        </div>
-        <div class="skills_products">
-            <h2 class="skills_products_title">Development<div class="skills_products_sub_title">システム開発</div></h2>
-            <div class="skills_products_text">システム開発を行います。<br/>
+            <div class="skills_writing">
+                <h2 class="skills_writing_title">Writing<div class="skills_writing_sub_title">ライティング</div></h2>
+                <div class="skills_writing_text">記事を執筆いたします。<br/>
                 どんどんご相談ください！</div>
-        </div>
+            </div>
+            <div class="skills_wordpress">
+                <h2 class="skills_wordpress_title">WEB production<div class="skills_wordpress_sub_title">ウェブ制作</div></h2>
+                <div class="skills_wordpress_text">WEB制作を行います<br/>どんどんご相談ください！</div>
+            </div>
+            <div class="skills_products">
+                <h2 class="skills_products_title">Development<div class="skills_products_sub_title">システム開発</div></h2>
+                <div class="skills_products_text">システム開発を行います。<br/>
+                    どんどんご相談ください！</div>
+            </div>
         </div>
     </div>
     <div class="work">

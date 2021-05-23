@@ -40,6 +40,10 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
             <?= $this->Form->error('message')?>
             <?= $this->Form->submit('確認画面へ') ?>
             <?= $this->Form->end()?>
+            <?= $this->Form->create(null, [
+                'controller' => 'main','action' => 'index'
+            ])?>
+            <?= $this->Form->submit('トップページへ戻る') ?>
         </div>
     </div>
 </div>
