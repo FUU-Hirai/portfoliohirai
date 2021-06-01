@@ -56,6 +56,7 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
         </div>
     </main>
     <footer>
+        <?= $this->element('main/footer')?>
     </footer>
 </body>
 </html>

@@ -19,11 +19,12 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
 <footer class="footer">
     <nav class="footer_global-nav">
         <ul>
-            <li class="nav-item active"><a href="about/index">ABOUT</a></li>
-            <li class="nav-item"><a href="work/index">WORKS</a></li>
-            <li class="nav-item"><a href="blog/index">BLOG</a></li>
-            <li class="nav-item"><a href="contact/index">CONTACT</a></li>
+            <li class="footer_nav-item active"><a href="about/index">ABOUT</a></li>
+            <li class="footer_nav-item"><a href="work/index">WORKS</a></li>
+            <li class="footer_nav-item"><a href="blog/index">BLOG</a></li>
+            <li class="footer_nav-item"><a href="contact/index">CONTACT</a></li>
         </ul>
+        <div class="copyright">©︎ 2021 Hirai Portfolio</div>
     </nav>
     <div class="footer_icon">
         <p><a class="fab fa-twitter">twitter</a></p>

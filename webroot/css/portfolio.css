@@ -3,13 +3,36 @@
 html {
     font-size: 62.5%;
 }
-.container {
-    padding: 0 0.0rem;
+body {
+    width: 100%;
+    padding:0 0.0rem;
+    margin: 0;
+
 }
 /******************header*********************************/
+.header {
+    background: rgb(185, 193, 191);
+    top:0;
+    left: 0;
+    right: 0;
+    display: flex;
+    padding: 30px 0 30px 0;
+    position: fixed;
+    justify-content: space-between;
+    transition: .5s;
+    z-index: 10;
+    opacity: 0.8;
+}
+.header.transform{
+    background: rgba(255,255,255,0.9);
+    padding: 20px;
+}
 .global-nav .nav-item {
     display: inline-block;
     margin:8px 30px;
+}
+.global-nav {
+    width: 100%;
 }
 .global-nav .nav-item a {
     font-family: 'Shadows Into Light', cursive;
@@ -17,10 +40,9 @@ html {
     height: 30px;
     text-align: center;
     border-radius: 4px;
-    color:#666;
-    font-size: 1.4rem;
+    color:black;
+    font-size: 1.5rem;
     padding: 5px 5px;
-
     letter-spacing: 2px;
     transition:  0.15s;
 }
@@ -31,6 +53,9 @@ html {
 }
 
 /***************************body********************/
+.container {
+    padding-top: 50px;
+}
 body {
     text-align: center;
     font-size: 1.4rem;
@@ -56,6 +81,7 @@ body {
 .float-right_title {
     font-family: 'Shadows Into Light', cursive;
 }
+/**************about***********************/
 .about_me_and_contact {
     padding-top: 50px;
     padding-bottom: 50px;
@@ -65,16 +91,20 @@ body {
 
 
 .form_left {
+    box-shadow: 0 3px 4px rgba(0, 0, 0, 0.32);
     float: left;
-    width: 50%;
+    width: 40%;
+    margin-left: 20px;
 }
 
 .form_right {
+    box-shadow: 0 3px 4px rgba(0, 0, 0, 0.32);
     float: right;
-    width: 50%;
+    width: 40%;
+    margin-right: 20px;
 }
 .button {
-    margin: 10px;
+    margin: 30px;
 }
 
 .skills {
@@ -110,14 +140,14 @@ body {
     font-size: 20px;
     padding-top: 10px;
 }
-
+/*******************work**************************/
 .work{
-    font-family: 'Shadows Into Light', cursive;
     padding-bottom: 50px;
 }
 .work_title
 {
     padding: 100px 30px 50px;
+    font-family: 'Shadows Into Light', cursive;
 }
 .work_title::before,
 .work_title::after {
@@ -135,37 +165,138 @@ body {
     margin-top: 60px;
     table-layout: fixed;
 }
-.work_child1,
-.work_child2,
-.work_child3 {
+.work_child::after {
+    content: '';
+    position: absolute;
+    background: no-repeat;
+    background-size: 100% 100%;
+    top:40%;
+    left:0;
+    height: 60%;
+    width:100%;
+    opacity: 0.2;
+    transform: scaleY(-1);
+}
+.work_child {
+    position: relative;
     display: table-cell;
+}
+.work_child.part1::after {
+    background: url("../img/main_image/hao-pan-6AW09_kJMaw-unsplash.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+.work_child.part2::after {
+    background: url("../img/main_image/img.png") no-repeat;
+    background-size: 100% 100%;
+}
+
+.work_child.part3::after {
+    background: url("../img/main_image/pawel-kadysz-CuFYW1c97w8-unsplash.jpg") no-repeat;
+    background-size: 100% 100%;
 }
 
 .work_text {
     display: block;
     width: 100%;
 }
+
+.work_image {
+    display: block;
+    width: 100%;
+    margin: 0 0 25%;
+}
+.work_des {
+    position: relative;
+    top:45%;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height: 50%;
+    overflow-y: auto;
+}
 /******************footer**********************/
-footer {
-    padding: 50px;
-    font-family: 'Shadows Into Light', cursive;
+.footer {
+    padding: 50px 50px 0 50px;
     display: inline-block;
     width: 100%;
+    background-color: rgba(110, 103, 103, 0.7);
+    list-style: none;
 }
 .footer_global-nav {
+    font-family: 'Shadows Into Light', cursive;
+    position: relative;
     float: right;
     width: 50%;
     list-style: none;
+    display: list-item;
 }
-.nav-item {
+.footer_nav-item a {
+    font-size: 2rem;
+    color: #FFFFFF;
+    position: absolute;
+    margin-bottom: 10px;
     list-style: none;
+}
+.footer_nav-item::marker {
+    color: #FFFFFF;
+}
+.footer_nav-item:hover::marker {
+    color: #d33c43;
+}
+
+.footer_icon a {
+    font-size: 2rem;
+    list-style: none;
+    color: #FFFFFF;
+    position: relative;
+    margin-bottom: 20px;
+}
+.footer_icon a::after {
+    position: absolute;
+    padding-top: 10px;
+    content: '';
+    bottom: -4px;
+    left: 0;
+    height: 2px;
+    background: #d33c43;
+    width: 100%;
+    transform: scale(0, 1);
+    transform-origin: left top;
+    transition: transform .3s;
+    opacity: 0.5;
+}
+.footer_icon a:hover::after {
+    transform: scale(1, 1);
+}
+.footer_nav-item a::after {
+    position: absolute;
+    content: '';
+    bottom: -4px;
+    left: 0;
+    height: 2px;
+    background: #333;
+    width: 100%;
+    transform: scale(0, 1);
+    transform-origin: left top;
+    transition: transform .3s;
+}
+.footer_nav-item a:hover::after {
+    transform: scale(1, 1);
 }
 .footer_icon {
     float: left;
     width: 50%;
     padding-bottom: 10px;
 }
-
+.copyright {
+    font-family: "Hiragino Maru Gothic ProN", Meiryo, sans-serif;
+    color: #FFFFFF;
+    display: inline-block;
+    float: right;
+    margin-top: 100px;
+    padding-bottom: 20px;
+}
 
 /*************contact**********************/
 .contact_title {
@@ -189,7 +320,7 @@ footer {
 }
 /*********contact_confirm*******************/
 .contact_form{
-    padding: 0px 100px 20px 100px;
+    padding: 0 100px 20px 100px;
 }
 .content_confirm_sub_title::before,
 .content_confirm_sub_title::after {
@@ -327,6 +458,9 @@ form {
     font-size: 9rem;
     padding: 30px 20px 20px 20px;
 }
+.skills_text {
+    font-family: "Hiragino Maru Gothic ProN", Meiryo, sans-serif;
+}
 .programming_skill,
 .web_production_skill,
 .writing_skill {
@@ -356,6 +490,43 @@ form {
 .inline_skill_des {
     padding:25px 0 25px 0;
 }
+.main_skill_icon {
+    display: inline-block;
+    width: 150px;
+    font-size: 9rem;
+    padding: 30px 20px 30px 20px;
+}
+.skills_writing,
+.skills_wordpress,
+.skills_products {
+    width: 30%;
+    padding: 0 25px;
+    box-shadow: 0 3px 4px rgba(0, 0, 0, 0.32);
+}
+.skills_text {
+    padding-bottom: 30px;
+}
+
+/*************固定背景******************/
+.back_image {
+    height: 400px;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.after_about {
+    background-image:
+        url("../img/main_image/scott-graham-OQMZwNd3ThU-unsplash.jpg");
+}
+
+.after_skills {
+    background-image:
+        url("../img/main_image/artem-sapegin-ZMraoOybTLQ-unsplash.jpg");
+
+}
+
+
 
 
 
