@@ -16,3 +16,10 @@
 
 $cakeDescription = 'CakePHP: the rapid development php framework';
 ?>
+<?php if ($elementValue === '1'): ?>
+    <?= $this->element('work/detail1');?>
+<?php elseif ($elementValue === '2'): ?>
+    <?= $this->element('work/detail2'); ?>
+<?php elseif ($elementValue === '3'): ?>
+    <?= $this->element('work/detail3'); ?>
+<?php endif;?>

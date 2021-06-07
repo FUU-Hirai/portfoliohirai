@@ -332,8 +332,11 @@ body {
     height: 2px;
     margin: 0 30px;
 }
-form {
-    margin-bottom: 20px;
+.form {
+    margin-bottom: 30px;
+}
+.form_message {
+    height: 200px;
 }
 
 .content_complete_title {
@@ -524,6 +527,23 @@ form {
     background-image:
         url("../img/main_image/artem-sapegin-ZMraoOybTLQ-unsplash.jpg");
 
+}
+
+/*************************work_detail*************************/
+.work_detail_des {
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 3px 4px rgba(0, 0, 0, 0.32);
+}
+.work_detail_title {
+    padding-bottom: 20px;
+}
+.work_detail_tool {
+    padding-bottom: 20px;
+}
+.work_detail_imag {
+    height: 650px;
+    width: 100%;
 }
 
 

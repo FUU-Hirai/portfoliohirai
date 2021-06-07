@@ -20,7 +20,7 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
     <nav class="global-nav">
         <ul>
             <li class="nav-item active"><a href="about/index">ABOUT</a></li>
-            <li class="nav-item"><a href="work/index">WORKS</a></li>
+            <li class="nav-item"><a href="#work">WORKS</a></li>
             <li class="nav-item"><a href="blog/index">BLOG</a></li>
             <li class="nav-item"><a href="/my_portfoliohirai/my_portfoliohirai/contact/index">CONTACT</a></li>
         </ul>

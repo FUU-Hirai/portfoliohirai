@@ -83,27 +83,31 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
     <div class="back_image after_skills">
 
     </div>
-    <div class="work">
+    <div class="work" id="work">
         <h1 class="work_title">WORKS</h1>
         <div class="work_context">
             <div class="work_child part1">
+                <?= $this->Form->create(null,[
+                    'url' => [
+                        'controller' => 'work','action' => 'detail']
+                ])?>
                 <img class="work_image" src="./webroot/img/main_image/hao-pan-6AW09_kJMaw-unsplash.jpg" alt="制作事例１">
                 <div class="work_des">
-                    <p class="work_text">一つ目の事例タイトル<br/>
+                    <p class="work_text">松尾自然園様<br/>
                         ツール：WordPress<br/>
                         簡単な紹介をします。
                     </p>
-                    <a href="work/index" class="button works">READ MORE</a>
+                    <?= $this->Form->button('READ MORE', ['class' => 'button works','name' =>'detail', 'value' => '1']) ?>
                 </div>
             </div>
             <div class="work_child part2">
                 <img class="work_image" src="./webroot/img/main_image/img.png" alt="制作事例２">
                 <div class="work_des">
-                    <p class="work_text">一つ目の事例タイトル<br/>
+                    <p class="work_text">某Webサイト<br/>
                         使用言語：HTML,CSS,JavaScript<br/>
                         簡単な紹介をします。
                     </p>
-                    <a href="work/index" class="button works">READ MORE</a>
+                    <?= $this->Form->button('READ MORE', ['class' => 'button works','name' =>'detail', 'value' => '2']) ?>
                 </div>
             </div>
             <div class="work_child part3">
@@ -113,9 +117,10 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
                         使用言語：php<br/>
                         簡単な紹介をします。
                     </p>
-                    <a href="work/index" class="button works">READ MORE</a>
+                    <?= $this->Form->button('READ MORE', ['class' => 'button works','name' =>'detail', 'value' => '3']) ?>
                 </div>
             </div>
+            <?= $this->Form->end() ?>
         </div>
     </div>
     <div class="content" style="background-color: blueviolet">

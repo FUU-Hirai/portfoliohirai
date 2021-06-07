@@ -36,14 +36,13 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
                 <?= $this->Form->text('tel',['placeholder' => '電話番号', 'class' => 'form tel','required' => false]) ?>
                 <?= $this->Form->error('tel')?>
             <p>お問い合わせ内容</p>
-                <?= $this->Form->textarea('message',['placeholder' => 'お問い合わせ内容','class' => 'form message','required' => false])?>
+                <?= $this->Form->textarea('message',['placeholder' => 'お問い合わせ内容','class' => 'form_message','required' => false])?>
             <?= $this->Form->error('message')?>
-            <?= $this->Form->submit('確認画面へ') ?>
+                <?= $this->Form->submit('確認画面へ') ?>
             <?= $this->Form->end()?>
-            <?= $this->Form->create(null, [
-                'controller' => 'main','action' => 'index'
-            ])?>
-            <?= $this->Form->submit('トップページへ戻る') ?>
+            <?= $this->Form->create(null, ['url' =>['controller' => 'main','action' => 'index']]) ?>
+                <?= $this->Form->submit('トップページへ戻る') ?>
+            <?= $this->Form->end()?>
         </div>
     </div>
 </div>
