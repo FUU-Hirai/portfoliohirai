@@ -24,10 +24,10 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
             <li class="footer_nav-item"><a href="blog/index">BLOG</a></li>
             <li class="footer_nav-item"><a href="contact/index">CONTACT</a></li>
         </ul>
-        <div class="copyright">©︎ 2021 Hirai Portfolio</div>
     </nav>
     <div class="footer_icon">
         <p><a class="fab fa-twitter">twitter</a></p>
         <p><a class="fab fa-github" href="https://github.com/">github</a></p>
     </div>
+    <div class="copyright">©︎ 2021 Hirai Portfolio</div>
 </footer>

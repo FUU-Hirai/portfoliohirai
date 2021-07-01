@@ -21,7 +21,7 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
         <ul>
             <li class="nav-item active"><a href="about/index">ABOUT</a></li>
             <li class="nav-item"><a href="#work">WORKS</a></li>
-            <li class="nav-item"><a href="blog/index">BLOG</a></li>
+            <li class="nav-item"><a href="https://myportfolio.seesaa.net/">BLOG</a></li>
             <li class="nav-item"><a href="/my_portfoliohirai/my_portfoliohirai/contact/index">CONTACT</a></li>
         </ul>
     </nav>

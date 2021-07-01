@@ -19,7 +19,7 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
 
 <div class="contact">
     <h2 class="contact_title">Contact</h2>
-    <h3 class="content_sub_title">確認画面</h3>
+    <h3 class="content_sub_title">お問い合せフォーム</h3>
     <div class="contact_form">
         <p class="contact_desc">こちらはお問い合わせフォームです。<br/>
         WEB制作やライティングのお仕事についてのご依頼、<br/>

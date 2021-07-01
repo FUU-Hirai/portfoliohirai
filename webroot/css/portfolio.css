@@ -1,5 +1,10 @@
 @charset "UTF-8";
 
+
+/**************@media(レスポンシブ)***************************************/
+@import url('print.css');
+
+
 html {
     font-size: 62.5%;
 }
@@ -239,6 +244,7 @@ body {
     list-style: none;
 }
 .footer_nav-item::marker {
+    display: none;
     color: #FFFFFF;
 }
 .footer_nav-item:hover::marker {
@@ -318,9 +324,15 @@ body {
 .contact_desc {
     padding-bottom: 50px;
 }
+.error-message {
+    color: red;
+}
 /*********contact_confirm*******************/
 .contact_form{
     padding: 0 100px 20px 100px;
+}
+.contact_form p {
+    padding-top: 20px;
 }
 .content_confirm_sub_title::before,
 .content_confirm_sub_title::after {
@@ -331,9 +343,6 @@ body {
     width: 140px;
     height: 2px;
     margin: 0 30px;
-}
-.form {
-    margin-bottom: 30px;
 }
 .form_message {
     height: 200px;
@@ -545,6 +554,199 @@ body {
     height: 650px;
     width: 100%;
 }
+
+@media (max-width: 768px) {
+    .about_speech_balloon dd,
+    .about_speech_balloon dt {
+        padding: 10px;
+    }
+    .work_child::after {
+        content: '';
+        position: absolute;
+        background: no-repeat;
+        background-size: 100% 100%;
+        top:30%;
+        left:0;
+        height: 70%;
+        width:100%;
+        opacity: 0.2;
+        transform: scaleY(-1);
+    }
+    .skills_text {
+        font-size:12px;
+    }
+    .skills_writing_title,
+    .skills_wordpress_title,
+    .skills_products_title
+    {
+        height: 160px;
+    }
+
+    /******main_works*************/
+    .work_text
+    {
+        font-size: 12px;
+    }
+
+    /***********about***************/
+    .about_my_info {
+        height: 400px;
+    }
+    .about_speech_balloon dl {
+        display: flex;
+        flex-wrap: wrap;
+        font-size: 12px;
+    }
+    .about_speech_balloon dd,
+    .about_speech_balloon dt{
+        padding: 10px;
+        margin: 10px;
+    }
+}
+@media only screen and (max-width: 480px) {
+
+    /**タイトルの擬似要素調整**/
+    h1.site-title::before,
+    h1.site-title::after {
+        margin: 20px auto;
+    }
+    h1.skills_title::before,
+    h1.skills_title::after {
+        margin: 20px auto;
+    }
+    h1.work_title::before,
+    h1.work_title::after {
+        margin: 20px auto;
+    }
+    /*******aboutの記事要素**********/
+    .about_sub_title::before,
+    .about_sub_title::after {
+        content: '';
+        display: block;
+        background-color: #606c76;
+        vertical-align: middle;
+        width: 80%;
+        height: 2px;
+        margin: 20px auto;
+    }
+    /**********main****************/
+    .form_left,
+    .form_right{
+        width: 100%;
+        margin: 10px auto;
+    }
+
+    .skills_context {
+        display: block;
+    }
+    .skills_writing,
+    .skills_wordpress,
+    .skills_products {
+        width: 100%;
+        margin: 10px auto;
+    }
+    .main_skill_icon {
+        display: inline-block;
+        width: 150px;
+        font-size: 5rem;
+        padding: 30px 20px 30px 20px;
+    }
+    .skills_writing_sub_title,
+    .skills_wordpress_sub_title,
+    .skills_products_sub_title{
+        display: block;
+        font-size: 10px;
+        height: 10px;
+        padding-bottom: 20px;
+    }
+    .work_context {
+        display: block;
+    }
+    .work_child {
+        display: block;
+        margin: 10px auto;
+    }
+    .footer_nav-item a,
+    .footer_icon a
+    {
+        font-size: 15px;
+    }
+
+    .copyright {
+        width: 100%;
+        font-size:10px;
+        display: block;
+        text-align: center;
+    }
+
+    /*********about**********/
+    .about_me_history_des {
+        text-align: left;
+    }
+    .about_my_info {
+        display: table;
+        width: 100%;
+        margin-top: 60px;
+        table-layout: fixed;
+    }
+    .about_my_icon {
+        width: 100%;
+        border-radius: 5%;
+        height: 200px;
+        background-color: antiquewhite;
+        margin: 0  auto 20px auto;
+    }
+    .about_speech_balloon {
+        width: 100%;
+        margin: 5px auto 10px auto;
+        display: inline-block;
+        padding: 7px 10px;
+        color: #555;
+        font-size: 16px;
+        background: #e0edff;
+
+    }
+    .about_speech_balloon::before {
+        content: "";
+        position: absolute;
+        /*top: -9px;*/
+        left: 50%;
+        margin-left: -14px;
+        border: 14px solid transparent;
+        border-bottom: 15px solid #e0edff;
+    }
+
+    .about_speech_balloon::after {
+        border: none;
+    }
+
+    .skill_sub_title::before,
+    .skill_sub_title::after {
+        content: '';
+        display: block;
+        background-color: #606c76;
+        vertical-align: middle;
+        width: 80%;
+        height: 2px;
+        margin: 20px auto;
+    }
+
+    /**********contact**************/
+    .content_sub_title::before,
+    .content_sub_title::after {
+        content: '';
+        display: block;
+        background-color: #606c76;
+        vertical-align: middle;
+        width: 80%;
+        height: 2px;
+        margin: 20px auto;
+    }
+    .contact_form {
+        padding: 0;
+    }
+}
+
 
 
 

@@ -1,0 +1,152 @@
+@media (max-width: 957px) {
+    .site-title #text {
+        margin: 200px;
+    }
+    /**タイトルの擬似要素調整**/
+    h1.site-title::before,
+    h1.site-title::after {
+        content: '';
+        display: block;
+        background-color: #606c76;
+        vertical-align: middle;
+        width: 80%;
+        height: 2px;
+        margin: 20px 50px;
+    }
+    h1.skills_title::before,
+    h1.skills_title::after {
+        content: '';
+        display: block;
+        background-color: #606c76;
+        vertical-align: middle;
+        width: 80%;
+        height: 2px;
+        margin: 20px 50px;
+    }
+    h1.work_title::before,
+    h1.work_title::after {
+        content: '';
+        display: block;
+        background-color: #606c76;
+        vertical-align: middle;
+        width: 80%;
+        height: 2px;
+        margin: 20px 50px;
+    }
+}
+
+/*@media (max-width: 768px) {*/
+/*    !*********ipad用***********!*/
+
+/*    !****my_skills***!*/
+/*    .skills_text {*/
+/*        font-size:12px;*/
+/*    }*/
+/*    .skills_writing_title,*/
+/*    .skills_wordpress_title,*/
+/*    .skills_products_title*/
+/*    {*/
+/*        height: 160px;*/
+/*    }*/
+
+/*    !******main_works*************!*/
+/*    .work_text*/
+/*    {*/
+/*        font-size: 12px;*/
+/*    }*/
+
+/*    !***********about***************!*/
+/*    .about_my_info {*/
+/*        height: 400px;*/
+/*    }*/
+/*    .about_speech_balloon dl {*/
+/*        display: flex;*/
+/*        flex-wrap: wrap;*/
+/*        font-size: 12px;*/
+/*    }*/
+/*    .about_speech_balloon dd,*/
+/*    .about_speech_balloon dt{*/
+/*        padding: 10px;*/
+/*        margin: 10px;*/
+/*    }*/
+/*}*/
+/*@media (min-width: 320px) {*/
+/*    .site-title {*/
+/*        font-size: 20px;*/
+/*    }*/
+/*    h1.site-title::before,*/
+/*    h1.site-title::after {*/
+/*        font-size: 20px;*/
+/*        content: '';*/
+/*        display: block;*/
+/*        background-color: #606c76;*/
+/*        vertical-align: middle;*/
+/*        width: 100%;*/
+/*        height: 2px;*/
+/*        margin: 20px auto;*/
+/*    }*/
+/*    .skills_title {*/
+/*        font-size: 20px;*/
+/*    }*/
+/*    h1.skills_title::before,*/
+/*    h1.skills_title::after {*/
+/*        content: '';*/
+/*        display: block;*/
+/*        width: 80%;*/
+/*        margin: 20px auto;*/
+/*    }*/
+/*    .skills_writing,*/
+/*    .skills_wordpress,*/
+/*    .skills_products*/
+/*    {*/
+/*        display: block;*/
+/*        width: 100%;*/
+/*    }*/
+
+/*    .skills_text {*/
+/*        font-size:12px;*/
+/*    }*/
+/*    .skills_writing_title,*/
+/*    .skills_wordpress_title,*/
+/*    .skills_products_title*/
+/*    {*/
+/*        height: 10px;*/
+/*        font-size: 20px;*/
+/*        width: 100%;*/
+/*    }*/
+/*    .skills_writing,*/
+/*    .skills_wordpress,*/
+/*    .skills_products {*/
+/*        width: 100%;*/
+/*    }*/
+/*    .skills_text {*/
+/*        padding-bottom: 30px;*/
+/*    }*/
+
+/*    !******main_works*************!*/
+/*    .work_title {*/
+/*        font-size: 20px;*/
+/*    }*/
+/*    h1.work_title::before,*/
+/*    h1.work_title::after {*/
+/*        content: '';*/
+/*        display: block;*/
+/*        width: 80%;*/
+/*        margin: 20px auto;*/
+/*    }*/
+
+/*    .work_text*/
+/*    {*/
+/*        font-size: 12px;*/
+/*    }*/
+/*    .work_context {*/
+/*       display: block!important;*/
+/*    }*/
+/*    .work_child*/
+/*    {*/
+/*        display: block!important;*/
+/*        margin-top: 20px;*/
+/*    }*/
+
+/*}*/
+
