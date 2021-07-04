@@ -91,7 +91,7 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
                     'url' => [
                         'controller' => 'work','action' => 'detail']
                 ])?>
-                <img class="work_image" src="./webroot/img/main_image/hao-pan-6AW09_kJMaw-unsplash.jpg" alt="制作事例１">
+                <img class="work_image" src="../webroot/img/main_image/hao-pan-6AW09_kJMaw-unsplash.jpg" alt="制作事例１">
                 <div class="work_des">
                     <p class="work_text">松尾自然園様<br/>
                         ツール：WordPress<br/>
@@ -101,7 +101,7 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
                 </div>
             </div>
             <div class="work_child part2">
-                <img class="work_image" src="./webroot/img/main_image/img.png" alt="制作事例２">
+                <img class="work_image" src="../webroot/img/main_image/img.png" alt="制作事例２">
                 <div class="work_des">
                     <p class="work_text">某Webサイト<br/>
                         使用言語：HTML,CSS,JavaScript<br/>
@@ -111,7 +111,7 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
                 </div>
             </div>
             <div class="work_child part3">
-                <img class="work_image" src="./webroot/img/main_image/pawel-kadysz-CuFYW1c97w8-unsplash.jpg" alt="制作事例３">
+                <img class="work_image" src="../webroot/img/main_image/pawel-kadysz-CuFYW1c97w8-unsplash.jpg" alt="制作事例３">
                 <div class="work_des">
                     <p class="work_text">一つ目の事例タイトル<br/>
                         使用言語：php<br/>
